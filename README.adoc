@@ -1,0 +1,7 @@
+_Aggregate Root_ (Menu) 1 -> N _Entity_ (Category) 1 -> N _Entity_ (CategoryItem)
+
+This causes following test failure when running `JMoleculesDddRules.all()`
+
+> Field l.s.j.m.Category.items is of type List and declared to be used from aggregate Menu!
+
+as `JMoleculesDddRules#IsDeclaredToUseTheSameAggregate` fails.
